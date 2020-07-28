@@ -1,0 +1,15 @@
+version: '3'
+services:
+        nginx:
+                container_name: nginx
+                image: nginx
+                volumes:
+                        - ./html:/usr/share/nginx/html/
+                ports:
+                        - 8080:80
+
+        redis:
+                container_name: redis
+                image: redis
+                expose:
+                        - 6379
