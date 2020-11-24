@@ -1,6 +1,6 @@
 package br.com.esportes.estudos.designpatterns.structural.adapter;
 
-public class Main {
+public class Adapter {
     public static void main(String[] args) {
         // Round fits round, no surprise.
         RoundHole hole = new RoundHole(5);
